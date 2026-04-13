@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+
+- rule: Responder saudacao
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+
+- rule: Responder despedida
+  steps:
+    - intent: despedida
+    - action: utter_despedida

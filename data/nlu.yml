@@ -1,0 +1,115 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - tudo bem?
+    - oi, preciso de ajuda
+    - olá, pode me ajudar?
+    - hey
+    - oi tudo certo?
+
+- intent: despedida
+  examples: |
+    - tchau
+    - até mais
+    - adeus
+    - obrigado
+    - valeu
+    - até logo
+    - muito obrigado pela ajuda
+    - até
+    - obrigado, pode fechar
+    - encerrar
+
+- intent: buscar_por_titulo
+  examples: |
+    - gostaria de encontrar o livro [Vidas Secas](titulo)
+    - você tem [O Cortiço](titulo) no acervo?
+    - preciso do livro [Capitães da Areia](titulo)
+    - tem [Iracema](titulo) disponível?
+    - pode me ajudar a achar [Grande Sertão Veredas](titulo)
+    - estou procurando [Quarto de Despejo](titulo)
+    - quero encontrar [Menino de Engenho](titulo)
+    - existe [A Hora da Estrela](titulo)?
+    - pesquisar pelo título [Dois Irmãos](titulo)
+    - tem [Ensaio sobre a Cegueira](titulo)?
+    - buscar livro [Dom Casmurro](titulo)
+    - quero o livro [Harry Potter](titulo)
+    - me ajuda a achar [1984](titulo)
+    - tem [O Alquimista](titulo)?
+    - procuro por título
+    - buscar por título
+    - quero buscar pelo título
+    - localizar um livro pelo título
+
+- intent: buscar_por_autor
+  examples: |
+    - quero livros de [Graciliano Ramos](autor)
+    - tem obras de [Aluísio Azevedo](autor)?
+    - me mostre livros de [Jorge Amado](autor)
+    - procuro títulos de [José de Alencar](autor)
+    - livros escritos por [Guimarães Rosa](autor)
+    - obras de [Carolina Maria de Jesus](autor)
+    - quero ver livros de [Clarice Lispector](autor)
+    - tem algo de [Milton Hatoum](autor)?
+    - livros do [Érico Veríssimo](autor)
+    - me indica algo de [José Saramago](autor)
+    - livros de [Machado de Assis](autor)
+    - obras de [Stephen King](autor)
+    - livros da [Collen Hoover](autor)
+    - quero livros de [J.K. Rowling](autor)
+    - buscar por autor
+    - quero buscar por autor
+    - localizar livros de um autor
+
+- intent: buscar_por_assunto
+  examples: |
+    - quero livros de [romance](assunto)
+    - quero livros sobre [romance](assunto)
+    - tem livros de [romance](assunto)?
+    - procuro livros de [romance](assunto)
+    - quero livros de [terror](assunto)
+    - quero livros sobre [terror](assunto)
+    - tem livros de [terror](assunto)?
+    - quero livros de [filosofia](assunto)
+    - quero livros sobre [filosofia](assunto)
+    - tem livros de [filosofia](assunto)?
+    - quero livros de [história](assunto)
+    - quero livros sobre [história](assunto)
+    - quero livros de [poesia](assunto)
+    - quero livros sobre [poesia](assunto)
+    - quero livros de [ficção científica](assunto)
+    - quero livros sobre [ficção científica](assunto)
+    - quero livros de [autoajuda](assunto)
+    - quero livros sobre [autoajuda](assunto)
+    - quero livros de [aventura](assunto)
+    - quero livros sobre [aventura](assunto)
+    - quero livros de [psicologia](assunto)
+    - quero livros sobre [psicologia](assunto)
+    - quero livros de [fantasia](assunto)
+    - quero livros sobre [fantasia](assunto)
+    - quero livros de [medicina](assunto)
+    - quero livros sobre [medicina](assunto)
+    - quero livros de [programação](assunto)
+    - quero livros sobre [programação](assunto)
+    - quero livros de [matemática](assunto)
+    - quero livros sobre [matemática](assunto)
+    - quero livros de [direito](assunto)
+    - quero livros sobre [direito](assunto)
+    - quero livros de [economia](assunto)
+    - quero livros sobre [economia](assunto)
+    - quero livros de [biologia](assunto)
+    - quero livros sobre [biologia](assunto)
+    - me recomenda algo de [contos](assunto)
+    - procuro sobre [contos](assunto)
+    - livros de [literatura brasileira](assunto)
+    - buscar por assunto
+    - quero buscar por tema
+    - localizar livros por assunto
+    - quero livros

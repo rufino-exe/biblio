@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - despedida
+  - buscar_por_titulo
+  - buscar_por_autor
+  - buscar_por_assunto
+
+entities:
+  - titulo
+  - autor
+  - assunto
+
+slots:
+  titulo:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: titulo
+
+  autor:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: autor
+
+  assunto:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: assunto
+
+responses:
+
+  utter_saudacao:
+    - text: "Oi! Seja bem-vindo à Biblioteca Virtual! Posso ajudar você a encontrar livros por título, autor ou assunto."
+
+  utter_despedida:
+    - text: "Até a próxima! Espero ter ajudado. Boas leituras!"
+
+  utter_perguntar_titulo:
+    - text: "Me diga o título do livro que você quer encontrar."
+
+  utter_perguntar_autor:
+    - text: "Qual é o nome do autor que você está procurando?"
+
+  utter_perguntar_assunto:
+    - text: "Sobre qual assunto você gostaria de pesquisar?"
+
+actions:
+  - action_buscar_por_titulo
+  - action_buscar_por_autor
+  - action_buscar_por_assunto
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
