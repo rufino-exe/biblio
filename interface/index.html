@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nexus Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <header>
+    <div class="header-left">
+      <div class="header-name">Nexus Library</div>
+      <div class="header-sub" id="statusText">online</div>
+    </div>
+
+    <div class="header-right">
+      <div class="endpoint-badge" onclick="openModal()">
+        Core API: <span id="endpointLabel">localhost</span>
+      </div>
+      <button class="icon-btn" onclick="clearChat()">Clear</button>
+    </div>
+  </header>
+
+  <div class="messages" id="messages">
+
+    <div class="welcome" id="welcome">
+      <h2>Sistema de Consulta de Acervo</h2>
+      <p>Selecione um filtro ou insira uma consulta.</p>
+
+      <div class="quick-btns">
+        <button onclick="sendQuick('buscar livro Dom Casmurro')">Título</button>
+        <button onclick="sendQuick('livros de Machado de Assis')">Autor</button>
+        <button onclick="sendQuick('livros sobre filosofia')">Categoria</button>
+      </div>
+    </div>
+
+    <div class="divider" id="startDivider" style="display:none">
+      início da sessão
+    </div>
+
+  </div>
+
+  <div class="input-area">
+    <div class="input-row">
+      <textarea id="input" placeholder="Digite sua consulta..."
+        onkeydown="handleKey(event)" oninput="autoResize(this)"></textarea>
+      <button class="send-btn" id="sendBtn" onclick="send()">Enviar</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal-bg" id="modal">
+  <div class="modal">
+    <h3>Configurar API</h3>
+    <input type="text" id="rasaUrlInput" placeholder="http://localhost:5005" />
+    <div class="modal-actions">
+      <button onclick="closeModal()">Cancelar</button>
+      <button onclick="saveConfig()">Salvar</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
